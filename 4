@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+double x,y,z;
+printf("enter amount of x and y and z:");
+scanf("%lf %lf %lf",&x,&y,&z);
+if (((x+y) > z)  && ((z+y) > x) && ((x+z) > y))
+{
+  printf("these numbers form a triangle");
+}
+else
+    {
+       printf("these numbers do not form a triangle");
+    }
+}
