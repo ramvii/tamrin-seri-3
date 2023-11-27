@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float hight,weight ;
+    printf("enter your hight(m):");
+    scanf("%f",&hight);
+    printf("enter your weight(kg):");
+    scanf("%f",&weight);
+    float BMI;
+    BMI=weight/(hight*hight);
+     if (BMI<18.5)
+    {
+      printf("you have underweight");
+    }
+     if (BMI>18.5 && BMI<24.9)
+    {
+        printf("you have normaweight");
+    }
+     if (BMI>25&& BMI<29.9)
+    {
+        printf("you have overweight");
+    }
+     if (BMI>30 && BMI<34.9)
+    {
+       printf("you have obesity");
+    }
+     if(BMI>35 && BMI<39.9)
+    {
+          printf("you have extreme obesity");
+    }
+}
