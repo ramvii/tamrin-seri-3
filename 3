@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  double a,b,c;
+    printf("enter amount of a:");
+  scanf("%lf",&a);
+    printf("enter amount of b:");
+  scanf("%lf",&b);
+   printf("enter amount of c:");
+  scanf("%lf",&c);
+  double delta ;
+   delta = (pow(b,2))-(4*a*c);
+  double x1,x2;
+    x1= ((b * -1) + sqrt(delta)) / (2 * a);
+    x2= ((b * -1) - sqrt(delta)) / (2 * a);
+    if (delta >0)
+    {
+       printf("%lf, %lf",x1,x2);
+    }
+    else if(delta==0)
+    {
+         printf("%lf",x1);
+    }
+    else if (delta<0)
+    {
+       printf("no root");
+    }
+
+
+}
+
